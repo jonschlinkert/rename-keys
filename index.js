@@ -2,13 +2,14 @@
   'use strict';
 
   function rename(obj, fn) {
-    fn = fn || function (prop) {return prop};
+    var newKey;
     for (var key in obj) {
-      if (!obj.hasOwnProperty(key)) {
-        return false;
+      if (!obj.hasOwnProperty(key)) continue;
+      newKey = fn(key)
+      if (newKey !== undefined && newKey != key) {
+        obj[newKey] = obj[key];
+        delete obj[key];
       }
-      obj[fn(key)] = obj[key];
-      delete obj[key];
     }
     return obj;
   }
