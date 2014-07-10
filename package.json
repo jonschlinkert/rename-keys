@@ -1,7 +1,7 @@
 {
   "name": "rename-keys",
   "description": "Modify the names of the own enumerable properties (keys) of an object.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/rename-keys",
   "author": {
     "name": "Jon Schlinkert",
@@ -24,12 +24,7 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "dependencies": {
-    "config-file": "~0.1.2",
-    "lodash": "~2.4.1"
-  },
   "devDependencies": {
-    "chai": "~1.9.0",
     "mocha": "~1.17.1"
   },
   "keywords": [

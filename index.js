@@ -4,9 +4,11 @@
   function rename(obj, fn) {
     var newKey;
     for (var key in obj) {
-      if (!obj.hasOwnProperty(key)) continue;
-      newKey = fn(key)
-      if (newKey !== undefined && newKey != key) {
+      if (!obj.hasOwnProperty(key)) {
+        continue;
+      }
+      newKey = fn(key);
+      if (newKey !== undefined && newKey !== key) {
         obj[newKey] = obj[key];
         delete obj[key];
       }
