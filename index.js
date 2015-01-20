@@ -2,19 +2,17 @@
   'use strict';
 
   function rename(obj, fn) {
+    if (typeof fn !== 'function') {
+      return obj;
+    }
+
     var res = {};
     for (var key in obj) {
-      if (hasOwn(obj, key)) {
-        var prop = fn(key);
-        var valid = key && !hasOwn(res, prop);
-        res[(valid ? prop : key) || key] = obj[key];
+      if (obj.hasOwnProperty(key)) {
+        res[fn(key) || key] = obj[key];
       }
     }
     return res;
-  }
-
-  function hasOwn(obj, key) {
-    return obj.hasOwnProperty(key);
   }
 
   if (typeof module !== 'undefined' && module.exports) {
