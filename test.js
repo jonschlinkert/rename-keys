@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
-var rename = require('../');
+var rename = require('./');
 
 describe('rename keys', function () {
   var addDashes = function(str) {
