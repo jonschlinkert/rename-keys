@@ -27,4 +27,11 @@ describe('rename keys', function () {
       if (prop == 'b') return 'c'
     }), {a: 1, c: 1});
   });
+
+  it('should rename keys without conflicts', function () {
+    assert.deepEqual(rename({a: 1, b: 2, c: 3, d: 4}, function(prop) {
+      var renameMap = {a : 'd', b: 'c', c: 'b', d: 'a'};
+      return renameMap[prop];
+    }), {a: 4, b: 3, c: 2, d: 1});
+  });
 });
