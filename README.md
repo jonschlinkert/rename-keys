@@ -69,5 +69,5 @@ results in:
 
 
 ## License
-Copyright (c) 2014 [Jon Schlinkert](https://github.com/jonschlinkert), contributors.
+Copyright (c) 2014-2015, Jon Schlinkert.
 Released under the MIT license
