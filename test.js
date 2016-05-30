@@ -31,4 +31,13 @@ describe('rename keys', function () {
       return renameMap[key];
     }), {a: 4, b: 3, c: 2, d: 1});
   });
+
+  it('should not throw an error when input object does not inherit from Object.prototype', function () {
+    var input = Object.create(null);
+    input.a = 0;
+
+    rename(input, function(key) {
+      return key;
+    });
+  });
 });
