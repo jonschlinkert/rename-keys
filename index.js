@@ -1,4 +1,4 @@
-(function () {
+(function() {
   'use strict';
 
   function rename(obj, fn) {
@@ -19,7 +19,7 @@
     module.exports = rename;
   } else {
     if (typeof define === 'function' && define.amd) {
-      define([], function () {
+      define([], function() {
         return rename;
       });
     } else {
