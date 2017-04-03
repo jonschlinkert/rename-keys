@@ -8,7 +8,7 @@
 
     var res = {};
     for (var key in obj) {
-      if (obj.hasOwnProperty(key)) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
         res[fn(key) || key] = obj[key];
       }
     }
