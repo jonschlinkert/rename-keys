@@ -9,7 +9,7 @@
     var res = {};
     for (var key in obj) {
       if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        res[fn(key) || key] = obj[key];
+        res[fn(key, obj[key]) || key] = obj[key];
       }
     }
     return res;

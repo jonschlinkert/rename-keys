@@ -41,4 +41,11 @@ describe('rename keys', function() {
       return key;
     });
   });
+
+  it('should rename key based on value', function() {
+    assert.deepEqual(rename({a: 1, b: 2, c: 3}, function(key, value) {
+      if (value > 1) return key + 'x';
+    }), {a: 1, bx: 2, cx: 3});
+  });
+
 });
