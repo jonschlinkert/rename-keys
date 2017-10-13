@@ -59,6 +59,22 @@ results in:
   } ... }
 ```
 
+**Rename based on value**
+
+The value can also be passed in as as a second argument.
+
+```js
+rename({a: 1, b: 2, c: 3}, function(key, value) {
+  if (value > 1) return key + 'x';
+});
+
+```
+
+results in:
+
+```js
+{a: 1, bx: 2, cx: 3});
+```
 
 ## Authors
 
