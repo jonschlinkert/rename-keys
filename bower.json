@@ -11,6 +11,7 @@
     "index.js"
   ],
   "devDependencies": {
+    "gulp-format-md": "^1.0.0",
     "mocha": "^3.2.0"
   },
   "keywords": [
@@ -20,7 +21,7 @@
     "properties",
     "rename"
   ],
-  "version": "1.1.3",
+  "version": "1.2.0",
   "bugs": {
     "url": "https://github.com/jonschlinkert/rename-keys/issues"
   },
@@ -38,8 +39,11 @@
     "index.js"
   ],
   "contributors": [
-    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
-    "Oleg Slobodskoi <oleg008@gmail.com> (https://kof.github.io)",
-    "palanik (https://github.com/palanik)"
+    "Brian Woodward (https://twitter.com/doowb)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Oleg Slobodskoi (https://kof.github.io)",
+    "Palani Kumanan (https://github.com/palanik)",
+    "Robin Bullock (https://github.com/robinbullocks4rb)",
+    "Scott Ellard (http://www.anenta.com)"
   ]
 }
