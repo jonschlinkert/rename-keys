@@ -5,6 +5,12 @@ var assert = require('assert');
 var rename = require('./');
 
 describe('rename keys', function() {
+  it('should throw an error if an object is not passed', function() {
+    assert.throws(function() {
+      rename('foo');
+    });
+  });
+
   it('should return the original object if no function is passed.', function() {
     assert.deepEqual(rename({name: 'rename-keys'}), {name: 'rename-keys'});
   });
@@ -47,5 +53,4 @@ describe('rename keys', function() {
       if (value > 1) return key + 'x';
     }), {a: 1, bx: 2, cx: 3});
   });
-
 });
