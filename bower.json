@@ -21,7 +21,7 @@
     "properties",
     "rename"
   ],
-  "version": "1.2.0",
+  "version": "2.0.0",
   "bugs": {
     "url": "https://github.com/jonschlinkert/rename-keys/issues"
   },
@@ -45,5 +45,8 @@
     "Palani Kumanan (https://github.com/palanik)",
     "Robin Bullock (https://github.com/robinbullocks4rb)",
     "Scott Ellard (http://www.anenta.com)"
-  ]
+  ],
+  "dependencies": {
+    "isobject": "^3.0.1"
+  }
 }

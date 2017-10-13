@@ -33,6 +33,12 @@ Changelog entries are classified using the following labels _(from [keep-a-chang
 </details>
 
 
+## [2.0.1] - 2017-10-13
+
+### Fixed
+
+- Adds `isobject` to dependencies.
+
 ## [2.0.0] - 2017-10-13
 
 ### Removed
