@@ -26,9 +26,11 @@ module.exports = function(obj, fn) {
   if (!isObject(obj)) {
     throw new TypeError('expected an object');
   }
+
   if (typeof fn !== 'function') {
     return obj;
   }
+
   var keys = Object.keys(obj);
   var result = {};
 
