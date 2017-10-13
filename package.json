@@ -5,9 +5,12 @@
   "homepage": "https://github.com/jonschlinkert/rename-keys",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
-    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)",
-    "Oleg Slobodskoi <oleg008@gmail.com> (https://kof.github.io)",
-    "palanik (https://github.com/palanik)"
+    "Brian Woodward (https://twitter.com/doowb)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Oleg Slobodskoi (https://kof.github.io)",
+    "Palani Kumanan (https://github.com/palanik)",
+    "Robin Bullock (https://github.com/robinbullocks4rb)",
+    "Scott Ellard (http://www.anenta.com)"
   ],
   "repository": "jonschlinkert/rename-keys",
   "bugs": {
@@ -18,11 +21,11 @@
     "index.js"
   ],
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "engines": {
     "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "devDependencies": {
     "mocha": "^3.2.0"
