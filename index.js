@@ -22,7 +22,7 @@ var isObject = require('isobject');
  * @api public
  */
 
-const renameKeys = function(obj, fn) {
+var renameKeys = function(obj, fn) {
   if (!isObject(obj)) {
     throw new TypeError('expected an object');
   }
