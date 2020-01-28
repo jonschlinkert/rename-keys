@@ -22,7 +22,7 @@ var isObject = require('isobject');
  * @api public
  */
 
-module.exports = function(obj, fn) {
+var renameKeys = function(obj, fn) {
   if (!isObject(obj)) {
     throw new TypeError('expected an object');
   }
@@ -41,7 +41,14 @@ module.exports = function(obj, fn) {
     if (typeof str === 'string' && str !== '') {
       key = str;
     }
-    result[key] = val;
+    if (isObject(val)) {
+      result[key] = 
+        (val, fn);
+    } else {
+      result[key] = val;
+    }
   }
   return result;
 };
+
+module.exports = renameKeys;
